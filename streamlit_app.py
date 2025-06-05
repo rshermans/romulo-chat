@@ -168,7 +168,7 @@ if uploaded_file or example_data:
             st.markdown('**y**')
             st.dataframe(y_test, height=210, hide_index=True, use_container_width=True)
 
-    # Zip dataset files
+    # Write dataset split CSV files then package them into a ZIP archive
     df.to_csv('dataset.csv', index=False)
     X_train.to_csv('X_train.csv', index=False)
     y_train.to_csv('y_train.csv', index=False)
