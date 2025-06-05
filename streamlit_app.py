@@ -99,6 +99,7 @@ if uploaded_file or example_data:
         st.write("Model training ...")
         time.sleep(sleep_time)
 
+        parameter_max_features_metric = parameter_max_features
         if parameter_max_features == 'all':
             parameter_max_features = None
             parameter_max_features_metric = X.shape[1]
