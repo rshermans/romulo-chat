@@ -5,3 +5,5 @@ altair>=4.0
 pytest
 
 flask
+openai
+requests

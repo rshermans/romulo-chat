@@ -20,4 +20,9 @@ A aplicação ficará disponível em `http://localhost:5000`.
 - `knowledge_base.py` – Gerencia a base de conhecimento e realiza buscas por similaridade.
 - `markov_generator.py` – Gera texto utilizando uma cadeia de Markov construída a partir dos textos recuperados.
 - `rag.py` – Combina a busca com a geração para produzir uma resposta.
-- `app.py` – Interface web via Flask.
+- `app.py` – Interface web via Flask com página de configuração.
+- `config.py` – Gerencia o provedor de LLM e as chaves de API.
+
+## Configurando LLMs
+
+Acesse `/config` na aplicação para escolher entre os modelos **OpenAI**, **Claude**, **Qwen**, **Mistral** ou **Gemini**. Insira a chave de API correspondente e salve para que o chatbot utilize o provedor desejado. Caso nenhum provedor seja definido, o sistema utiliza a geração offline baseada em Markov.

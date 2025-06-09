@@ -3,7 +3,9 @@ from collections import defaultdict
 from typing import List, Tuple, Dict
 
 
-def build_chain(texts: List[str], order: int = 2) -> Dict[Tuple[str, ...], List[str]]:
+def build_chain(
+    texts: List[str], order: int = 2
+) -> Dict[Tuple[str, ...], List[str]]:
     chain: Dict[Tuple[str, ...], List[str]] = defaultdict(list)
     for text in texts:
         words = text.split()
